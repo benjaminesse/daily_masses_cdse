@@ -50,7 +50,7 @@ def extract_timeseries(name, start_date, end_date, vent_location,
     # Convert to a dataframe
     df = pd.DataFrame({'date': ds.t, **output})
 
-    df.to_csv(f'{name}_SO2.csv')
+    df.to_csv(f'{name}_{start_date}_{end_date}_SO2_time_series.csv')
 
 if __name__ == '__main__':
 
