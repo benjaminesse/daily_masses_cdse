@@ -70,7 +70,6 @@ if __name__ == '__main__':
 
     extract_timeseries(
         name=args.region_id,
-        bounds=config['bounds'],
         start_date=args.start_date,
         end_date=args.end_date,
         vent_location=config['vent_location'],
