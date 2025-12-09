@@ -1,6 +1,11 @@
 # daily_masses_cdse
 This code is to fetch daily SO2 maps of a given region and extract the long term cumulative SO2 signal from the data
 
+## Python setup
+```
+conda create -n cdse -c conda-forge numpy pandas xarray matplotlib cartopy shapely pyyaml netcdf4 cmcrameri openeo
+```
+
 ## `fetch_time_series.py`
 This script fetches the data cube for the region given over the required time interval. The region is defined within the `regions.yml` file.
 
